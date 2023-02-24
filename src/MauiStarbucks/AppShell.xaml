@@ -18,7 +18,7 @@
             <ShellContent ContentTemplate="{DataTemplate page:FavouritePage}" />
         </Tab>
         <Tab Icon="notification.png" Route="notification">
-            <ShellContent ContentTemplate="{DataTemplate page:NotificationPage}" />
+            <ShellContent ContentTemplate="{DataTemplate page:LoginPage}" />
         </Tab>
     </TabBar>
 

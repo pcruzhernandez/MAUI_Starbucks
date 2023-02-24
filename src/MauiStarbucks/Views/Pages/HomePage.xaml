@@ -13,7 +13,7 @@
                    x:Name="HomeView"
                    SelectedTabIndex="0"
                    Shell.PresentationMode="Animated"
-                   Background="{StaticResource TertiaryBrush}">
+                   Background="black">
     <page:CustomTabBar.ViewContent>
         <Grid HorizontalOptions="FillAndExpand"
               VerticalOptions="FillAndExpand">
@@ -30,15 +30,15 @@
             <!---Title/Header-->
             <Grid Grid.Row="0"
                   ColumnDefinitions="*,*,*">
-                <Border Grid.Column="0"
+                <!--<Border Grid.Column="0"
                         HorizontalOptions="Start"
                         Style="{StaticResource EllipseBorderStyle}">
-                    <Image Source="humberger_menu.png"
+                    --><!--<Image Source="humberger_menu.png"
                            HorizontalOptions="Center"
-                           VerticalOptions="Center"/>
-                </Border>
+                           VerticalOptions="Center"/>--><!--
+                </Border>-->
                 <Image Grid.Column="1"
-                       Style="{StaticResource ImgBrandStyle}"/>
+                       Style="{StaticResource ImgBrandStyleLast}"/>
                 <Border Grid.Column="2"
                         HorizontalOptions="End"
                         Style="{StaticResource EllipseBorderStyle}"
@@ -60,10 +60,10 @@
                     <!---Slogan and Search & Filter Section-->
                     <VerticalStackLayout Grid.Row="0"
                                          Margin="0,20,0,0">
-                        <Label Text="Our way of loving"
+                        <Label Text="Live the party"
                                Style="{StaticResource LargeMessageLabelStyle}">
                         </Label>
-                        <Label Text="you back"
+                        <Label Text="like the Last Day"
                                Style="{StaticResource LargeMessageLabelStyle}"/>
                         <Grid>
                             <Border Style="{StaticResource SearchBorderStyle}">
@@ -140,7 +140,7 @@
                                                            x:Name="CategoryLabel"
                                                            HorizontalTextAlignment="Center"
                                                            VerticalTextAlignment="Center"
-                                                           FontFamily="RalewayRegular"
+                                                           FontFamily="Montse"
                                                            FontSize="16"/>
                                                         </Border>
                                                     </Grid>
@@ -156,17 +156,19 @@
                                      HorizontalOptions="FillAndExpand"
                                      VerticalOptions="Start"
                                      Margin="0,20,0,0">
-                            <Label Text="Popular"
+                            <Label Text="Nuevos Eventos"
                                    HorizontalOptions="StartAndExpand"
-                                   FontFamily="RalewayMedium"
-                                   FontSize="22"
-                                   TextColor="Black"/>
-                            <Label Text="See All"
+                                   FontFamily="Montse"
+                                   FontSize="18"
+                                   TextColor="{StaticResource Primary}"/>
+                            <Label Text="Ver todo"
                                    HorizontalOptions="End"
-                                   FontFamily="RalewayMedium"
-                                   FontSize="22"
+                                   FontFamily="Montse"
+                                   FontSize="18"
                                    TextColor="{StaticResource Primary}"/>
                         </StackLayout>
+                        <!-- PRUEBA PABLO-->
+                        
                         <!---Products Collection View-->
                         <CollectionView ItemsSource="{Binding Products}"
                                         SelectionMode="None"
@@ -211,7 +213,7 @@
                                                 <Label Grid.Row="1" 
                                            HorizontalOptions="FillAndExpand"
                                            Text="{Binding ProductName}"
-                                           FontFamily="RalewayMedium"
+                                           FontFamily="Montse"
                                            FontSize="19"
                                            TextColor="Black"
                                            LineBreakMode="NoWrap"
@@ -220,7 +222,7 @@
                                                  Margin="10,0,10,15">
                                                     <Label Text="{Binding ProductPrice, StringFormat='${0}.00'}"
                                                FontSize="25"
-                                               FontFamily="PoppinsRegular"
+                                               FontFamily="Montse"
                                                TextColor="{StaticResource Primary}"
                                                HorizontalOptions="StartAndExpand"/>
                                                     <ImageButton HorizontalOptions="End"

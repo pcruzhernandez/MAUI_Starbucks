@@ -89,6 +89,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
 	  <None Remove="Resources\Fonts\Poppins-Regular.ttf" />
 	  <None Remove="Resources\Fonts\ProximaNova-Regular.otf" />
 	  <None Remove="Resources\Fonts\Raleway-Medium.ttf" />
@@ -102,6 +103,8 @@
 	  <None Remove="Resources\Images\home.png" />
 	  <None Remove="Resources\Images\humberger.svg" />
 	  <None Remove="Resources\Images\humberger_menu.png" />
+	  <None Remove="Resources\Images\Lastday.png" />
+	  <None Remove="Resources\Images\lastdayblanco.png" />
 	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\love_default.png" />
 	  <None Remove="Resources\Images\love_filled.png" />
@@ -120,7 +123,14 @@
 	<ItemGroup>
 	  <PackageReference Include="CommunityToolkit.Maui" Version="1.2.0" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
 	  <PackageReference Include="Splat" Version="14.4.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Views\Pages\LoginPage.xaml.cs">
+	    <DependentUpon>LoginPage.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -128,6 +138,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\CustomTabBar.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Pages\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Pages\DetailPage.xaml">

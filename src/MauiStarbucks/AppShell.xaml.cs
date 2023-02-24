@@ -7,5 +7,6 @@ public partial class AppShell : Shell
 		InitializeComponent();
         Shell.SetTabBarIsVisible(this, false);
         Routing.RegisterRoute("detail", typeof(DetailPage));
+        Routing.RegisterRoute("login", typeof(LoginPage));
     }
 }

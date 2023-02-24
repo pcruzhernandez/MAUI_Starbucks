@@ -14,6 +14,7 @@ public static class MauiProgram
                 fonts.AddFont("ProximaNova-Regular.otf", "ProximaNovaRegular");
                 fonts.AddFont("Raleway-Regular.ttf", "RalewayRegular");
                 fonts.AddFont("Raleway-Medium.ttf", "RalewayMedium");
+                fonts.AddFont("Montserrat-Regular.ttf", "Montse");
             });
         HandleEntryHandler();
         return builder.Build();

@@ -5,14 +5,76 @@
                    xmlns:local="clr-namespace:MauiStarbucks"
                    BindingContext="{x:Static local:AppLocator.WalletViewModel}"
                    x:Class="MauiStarbucks.Views.Pages.WalletPage"
-                   SelectedTabIndex="1">
+                   SelectedTabIndex="1" Background="black">
     <page:CustomTabBar.ViewContent>
-        <Grid>
-            <Label 
-            Text="Welcome to Wallet!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-                TextColor="Black"/>
-        </Grid>
+        <!--<Border Stroke="Red" StrokeThickness="2" >
+            
+            <Grid Margin="5,5,5,5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Image Source="/Resources/Images/banner.jpg" Aspect="Fill"/>
+                <Label Grid.Row="1" Text="SABADO 18 OCT 2023 | 17:00 - 22:00" />
+                <Label Grid.Row="2" Text="Fiesta de los enamorados" />
+                <Label Grid.Row="3" Text="Teatro Barcelo" />
+                <Label Grid.Row="4" Text="+19 Casual" />
+                <Label Grid.Row="5" Text="Ver más" HorizontalTextAlignment="Center"/>
+            
+            </Grid>
+        </Border>-->
+        
+        <VerticalStackLayout Margin="20">
+            
+            <Label Text="Proximos eventos" TextColor="White"/>
+            <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 10,10,10,10"  >
+
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="/Resources/Images/banner.jpg" Aspect="Fill"/>
+                    <Label Grid.Row="1" Margin="5,0,0,0" Text="SABADO 18 OCT 2023 | 17:00 - 22:00" FontSize="Small"/>
+                    <Label Grid.Row="2" Margin="5,0,0,0" Text="Fiesta de los enamorados" FontSize="Large" FontAttributes="Bold"  />
+                    <Label Grid.Row="3" Margin="5,0,0,0" Text="Teatro Barcelo" FontSize="Small"/>
+                    <Label Grid.Row="4" Margin="5,0,0,0" Text="+19 Casual" FontSize="Small" />
+                    <BoxView Grid.Row="5" BackgroundColor="Orange"></BoxView>
+                    <Label Grid.Row="5" Margin="5,0,0,0" Text="Ver más" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" />
+
+                </Grid>
+            </Border>
+
+            <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 10,10,10,10"  >
+
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="70"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="30"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="/Resources/Images/banner.jpg" Aspect="Fill"/>
+                    <Label Grid.Row="1" Margin="5,0,0,0" Text="SABADO 18 OCT 2023 | 17:00 - 22:00" FontSize="Small" FontFamily="Montse"/>
+                    <Label Grid.Row="2" Margin="5,0,0,0" Text="Fiesta de los enamorados" FontSize="Large" FontAttributes="Bold"  FontFamily="Montse"/>
+                    <Label Grid.Row="3" Margin="5,0,0,0" Text="Teatro Barcelo" FontSize="Small" FontFamily="Montse"/>
+                    <Label Grid.Row="4" Margin="5,0,0,0" Text="+19 Casual" FontSize="Small" FontFamily="Montse"/>
+                    <BoxView Grid.Row="5" BackgroundColor="Orange"></BoxView>
+                    <Label Grid.Row="5" Margin="5,0,0,0" Text="Ver más" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" FontFamily="Montse"/>
+
+                </Grid>
+            </Border>
+
+        </VerticalStackLayout>
     </page:CustomTabBar.ViewContent>
 </page:CustomTabBar>

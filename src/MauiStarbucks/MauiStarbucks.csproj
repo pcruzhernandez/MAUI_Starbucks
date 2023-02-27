@@ -12,7 +12,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>MauiStarbucks</ApplicationTitle>
+		<ApplicationTitle>Last Day</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.sattasundar.mauistarbucks</ApplicationId>
@@ -76,9 +76,11 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" Color="#F5F5F5" />
+		
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#F5F5F5" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="black" BaseSize="128,128" />
+
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -89,6 +91,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\AppIcon\appicon.svg" />
+	  <None Remove="Resources\AppIcon\fondoLastDay.svg" />
 	  <None Remove="Resources\Fonts\Montserrat-Regular.ttf" />
 	  <None Remove="Resources\Fonts\Poppins-Regular.ttf" />
 	  <None Remove="Resources\Fonts\ProximaNova-Regular.otf" />
@@ -96,9 +100,11 @@
 	  <None Remove="Resources\Fonts\Raleway-Regular.ttf" />
 	  <None Remove="Resources\Images\add.png" />
 	  <None Remove="Resources\Images\back_arrow.png" />
+	  <None Remove="Resources\Images\banner.jpg" />
 	  <None Remove="Resources\Images\chocolate_frappuccino.png" />
 	  <None Remove="Resources\Images\fav.png" />
 	  <None Remove="Resources\Images\filter.png" />
+	  <None Remove="Resources\Images\fondo.png" />
 	  <None Remove="Resources\Images\grande.png" />
 	  <None Remove="Resources\Images\home.png" />
 	  <None Remove="Resources\Images\humberger.svg" />
@@ -118,6 +124,7 @@
 	  <None Remove="Resources\Images\tea_frappuccino.png" />
 	  <None Remove="Resources\Images\venti.png" />
 	  <None Remove="Resources\Images\wallet.png" />
+	  <None Remove="Resources\Splash\splash.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -125,6 +132,10 @@
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
 	  <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
 	  <PackageReference Include="Splat" Version="14.4.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiIcon Include="Resources\AppIcon\appicon.svg" />
 	</ItemGroup>
 
 	<ItemGroup>

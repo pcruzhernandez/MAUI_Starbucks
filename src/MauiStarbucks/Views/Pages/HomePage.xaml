@@ -37,16 +37,16 @@
                            HorizontalOptions="Center"
                            VerticalOptions="Center"/>--><!--
                 </Border>-->
-                <Image Grid.Column="1"
+                <Image Grid.Column="0" HorizontalOptions="Start"
                        Style="{StaticResource ImgBrandStyleLast}"/>
-                <Border Grid.Column="2"
+                <!--<Border Grid.Column="2"
                         HorizontalOptions="End"
                         Style="{StaticResource EllipseBorderStyle}"
                         Padding="12">
                     <Image Source="shop_bag.png"
                            HorizontalOptions="Center"
                            VerticalOptions="Center"/>
-                </Border>
+                </Border>-->
             </Grid>
             <ScrollView Grid.Row="1"
                         Orientation="Vertical"
@@ -60,11 +60,11 @@
                     <!---Slogan and Search & Filter Section-->
                     <VerticalStackLayout Grid.Row="0"
                                          Margin="0,20,0,0">
-                        <Label Text="Live the party"
-                               Style="{StaticResource LargeMessageLabelStyle}">
+                        <Label Text="Live the party like the Last Day"
+                               Style="{StaticResource LargeMessageLabelStyle}" FontSize="23">
                         </Label>
-                        <Label Text="like the Last Day"
-                               Style="{StaticResource LargeMessageLabelStyle}"/>
+                        <!--<Label Text="like the Last Day"
+                               Style="{StaticResource LargeMessageLabelStyle}"/>-->
                         <Grid>
                             <Border Style="{StaticResource SearchBorderStyle}">
                                 <Grid ColumnDefinitions="Auto,*"
@@ -168,9 +168,93 @@
                                    TextColor="{StaticResource Primary}"/>
                         </StackLayout>
                         <!-- PRUEBA PABLO-->
-                        
+                        <VerticalStackLayout Margin="0,10,0,0">
+
+                            
+                            <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 10,10,10,10"  >
+
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="70"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="30"/>
+                                    </Grid.RowDefinitions>
+                                    <Image Source="/Resources/Images/banner.jpg" Aspect="Fill"/>
+                                    <BoxView Grid.Row="1" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="1" Margin="10,0,0,0" Text="SABADO 18 OCT 2023 | 17:00 - 22:00" FontSize="Small" FontFamily="montse" TextColor="White"/>
+                                    <BoxView Grid.Row="2" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="2" Margin="10,0,0,0" Text="Fiesta de los enamorados" FontSize="Large" FontAttributes="Bold" TextColor="White" />
+                                    <BoxView Grid.Row="3" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="3" Margin="10,0,0,0" Text="Teatro Barcelo" FontSize="Small" TextColor="White"/>
+                                    <BoxView Grid.Row="4" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="4" Margin="10,0,0,0" Text="+19" FontSize="Small" TextColor="White"/>
+                                    <Label Grid.Row="4" Margin="45,0,0,0" Text="Casual" FontSize="Small" TextColor="White"/>
+                                    <BoxView Grid.Row="5" BackgroundColor="DarkOrange"></BoxView>
+                                    <Label Grid.Row="5" Margin="5,0,0,0" Text="Ver más" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" />
+
+                                </Grid>
+                            </Border>
+
+                            <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 10,10,10,10"  >
+
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="70"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="30"/>
+                                    </Grid.RowDefinitions>
+                                    <Image Source="/Resources/Images/banner.jpg" Aspect="Fill"/>
+                                    <BoxView Grid.Row="1" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="1" Margin="10,0,0,0" Text="SABADO 18 OCT 2023 | 17:00 - 22:00" FontSize="Small" FontFamily="montse" TextColor="White"/>
+                                    <BoxView Grid.Row="2" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="2" Margin="10,0,0,0" Text="Fiesta de los enamorados" FontSize="Large" FontAttributes="Bold" TextColor="White" />
+                                    <BoxView Grid.Row="3" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="3" Margin="10,0,0,0" Text="Teatro Barcelo" FontSize="Small" TextColor="White"/>
+                                    <BoxView Grid.Row="4" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="4" Margin="10,0,0,0" Text="+19" FontSize="Small" TextColor="White"/>
+                                    <Label Grid.Row="4" Margin="45,0,0,0" Text="Casual" FontSize="Small" TextColor="White"/>
+                                    <BoxView Grid.Row="5" BackgroundColor="DarkOrange"></BoxView>
+                                    <Label Grid.Row="5" Margin="5,0,0,0" Text="Ver más" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" />
+
+                                </Grid>
+                            </Border>
+
+                            <Border Stroke="black" StrokeThickness="2" StrokeShape="RoundRectangle 10,10,10,10"  >
+
+                                <Grid >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="70"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="auto"/>
+                                        <RowDefinition Height="30"/>
+                                    </Grid.RowDefinitions>
+                                    <Image Source="/Resources/Images/banner.jpg" Aspect="Fill"/>
+                                    <BoxView Grid.Row="1" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="1" Margin="10,0,0,0" Text="SABADO 18 OCT 2023 | 17:00 - 22:00" FontSize="Small" FontFamily="montse" TextColor="White"/>
+                                    <BoxView Grid.Row="2" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="2" Margin="10,0,0,0" Text="Fiesta de los enamorados" FontSize="Large" FontAttributes="Bold" TextColor="White" />
+                                    <BoxView Grid.Row="3" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="3" Margin="10,0,0,0" Text="Teatro Barcelo" FontSize="Small" TextColor="White"/>
+                                    <BoxView Grid.Row="4" BackgroundColor="#282828" Margin="0,0,0,0"></BoxView>
+                                    <Label Grid.Row="4" Margin="10,0,0,0" Text="+19" FontSize="Small" TextColor="White"/>
+                                    <Label Grid.Row="4" Margin="45,0,0,0" Text="Casual" FontSize="Small" TextColor="White"/>
+                                    <BoxView Grid.Row="5" BackgroundColor="DarkOrange"></BoxView>
+                                    <Label Grid.Row="5" Margin="5,0,0,0" Text="Ver más" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" TextColor="White" />
+
+                                </Grid>
+                            </Border>
+
+                        </VerticalStackLayout>
                         <!---Products Collection View-->
-                        <CollectionView ItemsSource="{Binding Products}"
+                        <!--<CollectionView ItemsSource="{Binding Products}"
                                         SelectionMode="None"
                                         VerticalOptions="StartAndExpand"
                                         Margin="-10,0,0,0">
@@ -251,7 +335,7 @@
 
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
-                        </CollectionView>
+                        </CollectionView>-->
                     </StackLayout>
                 </Grid>
             </ScrollView>
